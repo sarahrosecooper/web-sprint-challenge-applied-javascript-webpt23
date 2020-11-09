@@ -29,14 +29,15 @@ function Header() {
 
   // create textContent
 
-  date.textContent.add = "MARCH 28, 2020";
-  h1.textContent.add = "Lambda Times";
-  temp.classList.add = "98°";
+  date.textContent = "MARCH 28, 2020";
+  h1.textContent = "Lambda Times";
+  temp.textContent = "98°";
 
   // append
 
-  entry.appendChild(header);
   header.append(date, h1, temp);
 
   return header;
 }
+
+entry.appendChild(Header());
